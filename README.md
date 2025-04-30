@@ -1,4 +1,4 @@
-Birthday Event Planner
+#Birthday Event Planner
 A modern and dynamic Birthday Event Planner application designed to help users plan, organize, and manage birthday events. This project integrates a React frontend powered by Vite and a Spring Boot backend to deliver a seamless and efficient experience. It allows users to create, view, and manage birthday events with all necessary details, like invitations, guest lists, themes, and reminders.
 
 Technologies Used
