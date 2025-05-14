@@ -117,25 +117,86 @@ A modern and dynamic **Birthday Event Planner** application designed to help use
 │       │       └── BirthdayApplication.java
 │
 ├── frontend (React with Vite)
-│   ├── public/
+│   ├── node_modules/
 │   ├── src/
-│   │   ├── components/
-│   │   │   ├── EventForm.js
-│   │   │   ├── GuestList.js
-│   │   │   ├── EventCard.js
-│   │   │   └── Navbar.js
-│   │   ├── pages/
-│   │   │   ├── Home.js
-│   │   │   ├── Login.js
-│   │   │   ├── Register.js
-│   │   │   └── EventDetails.js
-│   │   ├── services/
-│   │   │   └── apiService.js
-│   │   ├── App.js
-│   │   └── main.js
-│   ├── vite.config.js
-│   └── package.json
+│   │   ├── assets/
+│   │   ├── Admin/
+│   │   │   ├── AdminHome.jsx
+│   │   │   ├── AdminLogin.jsx
+│   │   │   ├── AdminUserDetails.jsx
+│   │   │   ├── EventList.jsx
+│   │   │   ├── EventView.jsx
+│   │   │   └── Feedback.jsx
+│   │   ├── Auth/
+│   │   │   ├── Forgot.jsx
+│   │   │   ├── Signin.jsx
+│   │   │   └── Signup.jsx
+│   │   ├── Components/
+│   │   │   ├── ErrorBoundary.jsx
+│   │   │   ├── LazySuspense.jsx
+│   │   │   └── CSS/
+│   │   │       ├── AboutUs.css
+│   │   │       ├── AdminHome.css
+│   │   │       ├── AdminLogin.css
+│   │   │       ├── ContactUs.css
+│   │   │       ├── EventDisplay.css
+│   │   │       ├── EventList.css
+│   │   │       ├── EventRegistrationForm.css
+│   │   │       ├── EventViewForm.css
+│   │   │       ├── Faq.css
+│   │   │       ├── FoodItems.css
+│   │   │       ├── Footer.css
+│   │   │       ├── Forgot.css
+│   │   │       ├── Home.css
+│   │   │       ├── Navbar.css
+│   │   │       ├── ProfileDashboard.css
+│   │   │       ├── Services.css
+│   │   │       ├── Signin.css
+│   │   │       ├── Signup.css
+│   │   │       ├── Stats.css
+│   │   │       ├── StoryPage.css
+│   │   │       ├── Video.css
+│   │   │       ├── WhatWeDo.css
+│   │   │       └── WhyUs.css
+│   │   ├── Images/
+│   │   │   └── gify.gif
+│   │   ├── Pages/
+│   │   │   ├── AboutUs.jsx
+│   │   │   ├── Contactus.jsx
+│   │   │   ├── EventDisplay.jsx
+│   │   │   ├── EventList.jsx
+│   │   │   ├── EventRegistrationForm.jsx
+│   │   │   ├── EventViewForm.jsx
+│   │   │   ├── F.jsx
+│   │   │   ├── Faq.jsx
+│   │   │   ├── FoodItems.jsx
+│   │   │   ├── Footer.jsx
+│   │   │   ├── Gallery.jsx
+│   │   │   ├── Home.jsx
+│   │   │   ├── Navbar.jsx
+│   │   │   ├── Privacy.jsx
+│   │   │   ├── ProfileDashboard.jsx
+│   │   │   ├── RazorPay.jsx
+│   │   │   ├── Services.jsx
+│   │   │   ├── Terms.jsx
+│   │   │   ├── WhatWeDo.jsx
+│   │   │   └── WhyUs.jsx
+│   │   ├── redux/
+│   │   │   ├── store.jsx
+│   │   │   └── UserSlice.jsx
+│   │   ├── User/
+│   │   │   └── UserProfile.jsx
+│   │   ├── App.css
+│   │   ├── App.jsx
+│   │   ├── index.css
+│   │   └── main.jsx
+│   ├── .gitignore
+│   ├── index.html
+│   ├── package-lock.json
+│   ├── package.json
+│   └── vite.config.js
 │
 ├── .gitignore
 ├── README.md
 ```
+
