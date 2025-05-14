@@ -41,41 +41,99 @@ A modern and dynamic **Birthday Event Planner** application designed to help use
 
 ## Project Structure
 
-```plaintext
-├── backend (Spring Boot)
-│   ├── src
-│   │   ├── main
-│   │   │   ├── java
-│   │   │   │   └── com
-│   │   │   │       └── example
-│   │   │   │           └── eventplanner
-│   │   │   │               ├── controller
-│   │   │   │               ├── model
-│   │   │   │               ├── repository
-│   │   │   │               ├── service
-│   │   │   │               ├── security
-│   │   │   │               └── exception
-│   │   │   └── resources
-│   │   │       ├── application.properties
-│   │   │       └── data.sql (optional for seeding DB)
+├── backend (Spring Boot, Spring Security, Java, JWT)
+│   └── BIRTHDAY/
+│       ├── .mvn/
+│       ├── .vscode/
+│       ├── src/
+│       │   └── main/
+│       │       ├── java/
+│       │       │   └── com/
+│       │       │       └── java/
+│       │       │           └── birthday/
+│       │       │               ├── config/
+│       │       │               │   ├── ApplicationConfig.java
+│       │       │               │   ├── JwtAuthenticationFilter.java
+│       │       │               │   ├── SecurityConfig.java
+│       │       │               │   └── SwaggerConfig.java
+│       │       │               ├── controller/
+│       │       │               │   ├── AddonController.java
+│       │       │               │   ├── AuthenticationController.java
+│       │       │               │   ├── EventController.java
+│       │       │               │   ├── FeedbackController.java
+│       │       │               │   ├── FoodController.java
+│       │       │               │   ├── PaymentController.java
+│       │       │               │   ├── ThemeController.java
+│       │       │               │   └── UserController.java
+│       │       │               ├── dto/
+│       │       │               │   ├── request/
+│       │       │               │   │   ├── ForgotPasswordRequest.java
+│       │       │               │   │   ├── LoginRequest.java
+│       │       │               │   │   └── RegisterRequest.java
+│       │       │               │   └── response/
+│       │       │               │       ├── BasicResponse.java
+│       │       │               │       └── LoginResponse.java
+│       │       │               ├── Enum/
+│       │       │               │   ├── Permission.java
+│       │       │               │   ├── Role.java
+│       │       │               │   └── TokenType.java
+│       │       │               ├── model/
+│       │       │               │   ├── Addon.java
+│       │       │               │   ├── Event.java
+│       │       │               │   ├── Feedback.java
+│       │       │               │   ├── Food.java
+│       │       │               │   ├── Payment.java
+│       │       │               │   ├── Theme.java
+│       │       │               │   ├── Token.java
+│       │       │               │   └── User.java
+│       │       │               ├── repository/
+│       │       │               │   ├── AddonRepository.java
+│       │       │               │   ├── EventRepository.java
+│       │       │               │   ├── FeedbackRepository.java
+│       │       │               │   ├── FoodRepository.java
+│       │       │               │   ├── PaymentRepository.java
+│       │       │               │   ├── ThemeRepository.java
+│       │       │               │   ├── TokenRepository.java
+│       │       │               │   └── UserRepository.java
+│       │       │               ├── service/
+│       │       │               │   ├── impl/
+│       │       │               │   │   └── AuthenticationServiceImpl.java
+│       │       │               │   ├── AddonService.java
+│       │       │               │   ├── AuthenticationService.java
+│       │       │               │   ├── EventService.java
+│       │       │               │   ├── FeedbackService.java
+│       │       │               │   ├── FoodService.java
+│       │       │               │   ├── PaymentService.java
+│       │       │               │   ├── ThemeService.java
+│       │       │               │   └── UserService.java
+│       │       │               └── utils/
+│       │       │                   ├── JwtUtils.java
+│       │       │                   └── LogoutUtils.java
+│       │       ├── resources/
+│       │       │   ├── META-INF/
+│       │       │   │   └── additional-spring-configuration-metadata.json
+│       │       │   └── application.properties
+│       │       └── BirthdayApplication.java
+│
 ├── frontend (React with Vite)
-│   ├── public
-│   ├── src
-│   │   ├── components
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
 │   │   │   ├── EventForm.js
 │   │   │   ├── GuestList.js
 │   │   │   ├── EventCard.js
 │   │   │   └── Navbar.js
-│   │   ├── pages
+│   │   ├── pages/
 │   │   │   ├── Home.js
 │   │   │   ├── Login.js
 │   │   │   ├── Register.js
 │   │   │   └── EventDetails.js
-│   │   ├── services
+│   │   ├── services/
 │   │   │   └── apiService.js
 │   │   ├── App.js
 │   │   └── main.js
 │   └── vite.config.js
+│
 ├── .gitignore
 ├── README.md
 └── package.json (frontend)
