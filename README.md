@@ -1,23 +1,106 @@
 # birthday-event-planner-react-vite-springboot
 
-A modern and dynamic **Birthday Event Planner** application designed to help users plan, organize, and manage birthday events. This project integrates a **React** frontend powered by **Vite** and a **Spring Boot** backend to deliver a seamless and efficient experience. It allows users to create, view, and manage birthday events with all necessary details, like invitations, guest lists, themes, and reminders.
+A modern and dynamic **Birthday Event Planner** application designed to help users plan, organize, and manage birthday events. This project integrates a **React** frontend powered by **Vite** and a **Spring Boot** backend to deliver a seamless and efficient experience. It allows users to create, view, and manage birthday events with all necessary details, like invitations, guest lists, themes, and reminders.The project includes a backend API for managing events, users, and payments, and a frontend for user interaction and admin functionalities.
 
-## Technologies Used
+---
 
-- **Frontend**: 
-  - React (with **Vite** as the build tool for fast development)
-- **Backend**: 
-  - Spring Boot (RESTful API)
-- **Database**: 
-  - H2 (in-memory for development, can be replaced with any SQL-based DB)
-- **Authentication**: 
-  - JWT (JSON Web Tokens) for secure user login
-- **Styling**: 
-  - Tailwind CSS or Material-UI for UI components
-- **State Management**: 
-  - React Context or Redux (if needed)
-- **API Communication**: 
-  - Axios for HTTP requests
+## 🛠️ **Tech Stack**
+
+### 🔧 **Backend Stack (Java - Spring Boot)**
+
+#### **Language & Frameworks**
+- **Java** - Core language used for backend development
+- **Spring Boot** - Framework for building REST APIs
+- **Spring Security** - Secures endpoints with JWT-based authentication
+- **Spring Web** - For building web controllers and handling HTTP requests
+- **Spring Data JPA** - ORM for database interaction (e.g., MySQL, PostgreSQL)
+
+#### **Authentication & Authorization**
+- **JWT (JSON Web Tokens)** - Stateless token-based authentication
+- **Custom Authentication Filter** - `JwtAuthenticationFilter.java` for token validation
+- **User Roles and Permissions** - Managed through `Enum/Role.java` and `Permission.java`
+
+#### **Database**
+- **MySQL/PostgreSQL/H2** (Implied) - Database used via Spring Data JPA
+
+#### **Project Management & Build Tool**
+- **Maven** - Build tool, dependencies managed via `pom.xml` (found in `.mvn/` directory)
+
+#### **Documentation**
+- **Swagger / OpenAPI** - API documentation generated through `SwaggerConfig.java`
+
+#### **Architecture Patterns**
+- **Layered Architecture** - Organizing the project into controllers, services, repositories, and entities
+- **DTO Pattern** - Data Transfer Object pattern to decouple API layer from internal models
+- **Service Interface + Impl Pattern** - For better maintainability and easier testing
+
+#### **Utilities**
+- **Custom Utility Classes** - `JwtUtils.java`, `LogoutUtils.java` for handling JWT logic and logout functionality
+
+#### **Others**
+- **VSCode Settings** - Custom settings for development (found in `.vscode/`)
+
+---
+
+### 🎨 **Frontend Stack (React + Vite)**
+
+#### **Framework & Tooling**
+- **React** - Frontend library for building the user interface
+- **Vite** - Fast build tool for frontend development
+- **JSX** - Syntax extension for JavaScript to write HTML-like structures
+- **CSS** - Plain CSS modules for styling individual components/pages
+- **React Router** - For navigation and routing between different pages
+
+#### **State Management**
+- **Redux Toolkit** - Centralized state management for handling the user state across the app (found in `redux/store.jsx` and `redux/UserSlice.jsx`)
+
+#### **Auth & API Integration**
+- **JWT Handling** - To manage user authentication and persist login state
+- **Axios/fetch API** - For making HTTP requests (likely used for communication with the backend)
+
+#### **Error Handling & Performance**
+- **ErrorBoundary.jsx** - Catches JavaScript errors in the component tree and displays fallback UI
+- **LazySuspense.jsx** - For code splitting and lazy loading of components
+
+#### **UI / Page Structure**
+- **Modular Components** - Organized under `Pages/`, `Admin/`, and `User/` directories
+- **Responsive Styling** - Each page/component has its own `.css` file
+- **Images** - Static images like `gify.gif` stored under `Images/`
+
+#### **Payment Integration**
+- **RazorPay** - Integrated payment gateway (found in `RazorPay.jsx`)
+
+---
+
+## 📁 **Project-Level Configuration & Tooling**
+
+### **Version Control**
+- **Git** - Version control for managing the project with `.gitignore` to ignore unnecessary files
+
+### **Project Configs**
+- **Backend Config** - Configurations for the backend application (found in `application.properties`)
+- **Frontend Config** - Vite-specific configurations for the frontend build (found in `vite.config.js`)
+
+---
+
+## 🛠️ **Getting Started**
+
+### **Prerequisites**
+
+Make sure you have the following installed:
+- **Java 17+** (for the backend)
+- **Maven** (for building the backend)
+- **Node.js 16+** (for the frontend)
+- **npm or yarn** (for managing frontend dependencies)
+
+### **Backend Setup**
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/birthday-event-management.git
+   cd birthday-event-management/backend
+
 
 ## Features
 
