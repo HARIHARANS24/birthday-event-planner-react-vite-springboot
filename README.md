@@ -98,8 +98,8 @@ Make sure you have the following installed:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/birthday-event-management.git
-   cd birthday-event-management/backend
+   git clone https://github.com/hariharans24/birthday-event-planner-react-vite-springboot.git
+   cd birthday-event-planner-react-vite-springboot/backend
 
 
 ## Features
