@@ -39,8 +39,9 @@ A modern and dynamic **Birthday Event Planner** application designed to help use
 - **Responsive Design**: 
   - Mobile-friendly UI optimized for **all screen sizes**.
 
-## Project Structure
+## 📁 Project Structure
 
+```
 ├── backend (Spring Boot, Spring Security, Java, JWT)
 │   └── BIRTHDAY/
 │       ├── .mvn/
@@ -137,4 +138,4 @@ A modern and dynamic **Birthday Event Planner** application designed to help use
 │
 ├── .gitignore
 ├── README.md
-
+```
