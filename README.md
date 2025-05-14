@@ -132,8 +132,9 @@ A modern and dynamic **Birthday Event Planner** application designed to help use
 │   │   │   └── apiService.js
 │   │   ├── App.js
 │   │   └── main.js
-│   └── vite.config.js
+│   ├── vite.config.js
+│   └── package.json
 │
 ├── .gitignore
 ├── README.md
-└── package.json (frontend)
+
