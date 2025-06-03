@@ -52,7 +52,7 @@ A modern and dynamic **Birthday Event Planner** application designed to help use
 - **React Router** - For navigation and routing between different pages
 
 #### **State Management**
-- **Redux Toolkit** - Centralized state management for handling the user state across the app (found in `redux/store.jsx` and `redux/UserSlice.jsx`)
+- **Redux ToolKit** - Centralized state management for handling the user state across the app (found in `redux/store.jsx` and `redux/UserSlice.jsx`)
 
 #### **Auth & API Integration**
 - **JWT Handling** - To manage user authentication and persist login state
