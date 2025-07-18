@@ -17,7 +17,7 @@ A modern and dynamic **Birthday Event Planner** application designed to help use
 - **Theme & Decorations** 🎨  
   - Browse and select event themes 
   - Customize decorations
-  - Preview theme options
+  - Preview theme options 
 
 - **Food & Catering** 🍽️
   - Select food packages
