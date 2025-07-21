@@ -13,7 +13,7 @@ A modern and dynamic **Birthday Event Planner** application designed to help use
   - Add, edit, and remove guests   
   - Track RSVPs
   - Manage guest lists  
-
+ 
 - **Theme & Decorations** 🎨  
   - Browse and select event themes 
   - Customize decorations 
