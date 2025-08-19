@@ -8,7 +8,7 @@ A modern and dynamic **Birthday Event Planner** application designed to help use
   - Create and manage birthday events    
   - Set event details (date, time, venue, theme)
   - Track event status and progress   
-
+ 
 - **Guest Management** 👥  
   - Add, edit, and remove guests     
   - Track RSVPs 
