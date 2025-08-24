@@ -14,7 +14,7 @@ A modern and dynamic **Birthday Event Planner** application designed to help use
   - Track RSVPs 
   - Manage guest lists   
   
-- **Theme & Decorations** 🎨  
+- **Theme & Decorations** 🎨   
   - Browse and select event themes 
   - Customize decorations 
   - Preview theme options 
