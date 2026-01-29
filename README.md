@@ -10,7 +10,7 @@ A modern and dynamic **Birthday Event Planner** application designed to help use
   - Track event status and progress       
     
 - **Guest Management** 👥       
-  - Add, edit, and remove guests         
+  - Add, edit, and remove guests          
   - Track RSVPs 
   - Manage guest lists    
   
