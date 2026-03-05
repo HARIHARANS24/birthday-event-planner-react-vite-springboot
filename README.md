@@ -57,157 +57,172 @@ A modern and dynamic **Birthday Event Planner** application designed to help use
 ## 📁 Project Structure
 
 ```
-📦 birthday-event-management
-├── 📂 frontend
-│   ├── 📂 src
-│   │   ├── 📂 assets
-│   │   │   ├── 📂 Admin
-│   │   │   │   ├── 📄 AdminHome.jsx
-│   │   │   │   ├── 📄 AdminLogin.jsx
-│   │   │   │   ├── 📄 AdminUserDetails.jsx
-│   │   │   │   ├── 📄 EventList.jsx
-│   │   │   │   ├── 📄 EventView.jsx
-│   │   │   │   └── 📄 Feedback.jsx
-│   │   │   ├── 📂 Auth
-│   │   │   │   ├── 📄 Forgot.jsx
-│   │   │   │   ├── 📄 Signin.jsx
-│   │   │   │   └── 📄 Signup.jsx
-│   │   │   ├── 📂 Components
-│   │   │   │   ├── 📂 CSS
-│   │   │   │   │   ├── 📄 AboutUs.css
-│   │   │   │   │   ├── 📄 AdminHome.css
-│   │   │   │   │   ├── 📄 AdminLogin.css
-│   │   │   │   │   ├── 📄 ContactUs.css
-│   │   │   │   │   ├── 📄 EventDisplay.css
-│   │   │   │   │   ├── 📄 EventList.css
-│   │   │   │   │   ├── 📄 EventRegistrationForm.css
-│   │   │   │   │   ├── 📄 EventViewForm.css
-│   │   │   │   │   ├── 📄 Faq.css
-│   │   │   │   │   ├── 📄 FoodItems.css
-│   │   │   │   │   ├── 📄 Footer.css
-│   │   │   │   │   ├── 📄 Forgot.css
-│   │   │   │   │   ├── 📄 Home.css
-│   │   │   │   │   ├── 📄 Navbar.css
-│   │   │   │   │   ├── 📄 ProfileDashboard.css
-│   │   │   │   │   ├── 📄 Services.css
-│   │   │   │   │   ├── 📄 Signin.css
-│   │   │   │   │   ├── 📄 Signup.css
-│   │   │   │   │   ├── 📄 Stats.css
-│   │   │   │   │   ├── 📄 StoryPage.css
-│   │   │   │   │   ├── 📄 Video.css
-│   │   │   │   │   ├── 📄 WhatWeDo.css
-│   │   │   │   │   └── 📄 WhyUs.css
-│   │   │   │   ├── 📄 ErrorBoundary.jsx
-│   │   │   │   └── 📄 LazySuspense.jsx
-│   │   │   ├── 📂 Images
-│   │   │   │   └── 📄 gify.gif
-│   │   │   ├── 📂 Pages
-│   │   │   │   ├── 📄 AboutUs.jsx
-│   │   │   │   ├── 📄 Contactus.jsx
-│   │   │   │   ├── 📄 EventDisplay.jsx
-│   │   │   │   ├── 📄 EventList.jsx
-│   │   │   │   ├── 📄 EventRegistrationForm.jsx
-│   │   │   │   ├── 📄 EventViewForm.jsx
-│   │   │   │   ├── 📄 F.jsx
-│   │   │   │   ├── 📄 Faq.jsx
-│   │   │   │   ├── 📄 FoodItems.jsx
-│   │   │   │   ├── 📄 Footer.jsx
-│   │   │   │   ├── 📄 Gallery.jsx
-│   │   │   │   ├── 📄 Home.jsx
-│   │   │   │   ├── 📄 Navbar.jsx
-│   │   │   │   ├── 📄 Privacy.jsx
-│   │   │   │   ├── 📄 ProfileDashboard.jsx
-│   │   │   │   ├── �� RazorPay.jsx
-│   │   │   │   ├── 📄 Services.jsx
-│   │   │   │   ├── 📄 Terms.jsx
-│   │   │   │   ├── 📄 WhatWeDo.jsx
-│   │   │   │   └── 📄 WhyUs.jsx
-│   │   │   ├── 📂 redux
-│   │   │   │   ├── 📄 store.jsx
-│   │   │   │   └── 📄 UserSlice.jsx
-│   │   │   └── 📂 User
-│   │   │       └── 📄 UserProfile.jsx
-│   │   ├── 📄 App.css
-│   │   ├── 📄 App.jsx
-│   │   ├── 📄 index.css
-│   │   └── 📄 main.jsx
-│   ├── 📄 .gitignore
-│   ├── 📄 index.html
-│   ├── 📄 package-lock.json
-│   ├── 📄 package.json
-│   └── 📄 vite.config.js
-│
-├── 📂 backend
-│   ├── 📂 .mvn
-│   ├── 📂 .vscode
-│   ├── 📂 src
-│   │   ├── 📂 main
-│   │   │   ├── 📂 java
-│   │   │   │   └── 📂 com
-│   │   │   │       └── 📂 birthday
-│   │   │   │           ├── 📂 config
-│   │   │   │           │   ├── 📄 ApplicationConfig.java
-│   │   │   │           │   ├── 📄 JwtAuthenticationFilter.java
-│   │   │   │           │   ├── 📄 SecurityConfig.java
-│   │   │   │           │   └── 📄 SwaggerConfig.java
-│   │   │   │           ├── 📂 controller
-│   │   │   │           │   ├── 📄 AddonController.java
-│   │   │   │           │   ├── 📄 AuthenticationController.java
-│   │   │   │           │   ├── 📄 EventController.java
-│   │   │   │           │   ├── 📄 FeedbackController.java
-│   │   │   │           │   ├── 📄 FoodController.java
-│   │   │   │           │   ├── 📄 PaymentController.java
-│   │   │   │           │   ├── 📄 ThemeController.java
-│   │   │   │           │   └── 📄 UserController.java
-│   │   │   │           ├── 📂 dto
-│   │   │   │           │   ├── 📂 request
-│   │   │   │           │   │   ├── 📄 ForgotPasswordRequest.java
-│   │   │   │           │   │   ├── 📄 LoginRequest.java
-│   │   │   │           │   │   └── 📄 RegisterRequest.java
-│   │   │   │           │   └── 📂 response
-│   │   │   │           │       ├── 📄 BasicResponse.java
-│   │   │   │           │       └── 📄 LoginResponse.java
-│   │   │   │           ├── 📂 model
-│   │   │   │           │   ├── 📄 Addon.java
-│   │   │   │           │   ├── 📄 Event.java
-│   │   │   │           │   ├── 📄 Feedback.java
-│   │   │   │           │   ├── 📄 Food.java
-│   │   │   │           │   ├── 📄 Payment.java
-│   │   │   │           │   ├── 📄 Theme.java
-│   │   │   │           │   ├── 📄 Token.java
-│   │   │   │           │   └── 📄 User.java
-│   │   │   │           ├── 📂 repository
-│   │   │   │           │   ├── 📄 AddonRepository.java
-│   │   │   │           │   ├── 📄 EventRepository.java
-│   │   │   │           │   ├── 📄 FeedbackRepository.java
-│   │   │   │           │   ├── 📄 FoodRepository.java
-│   │   │   │           │   ├── 📄 PaymentRepository.java
-│   │   │   │           │   ├── 📄 ThemeRepository.java
-│   │   │   │           │   ├── 📄 TokenRepository.java
-│   │   │   │           │   └── 📄 UserRepository.java
-│   │   │   │           ├── 📂 service
-│   │   │   │           │   ├── 📂 impl
-│   │   │   │           │   │   └── 📄 AuthenticationServiceImpl.java
-│   │   │   │           │   ├── 📄 AddonService.java
-│   │   │   │           │   ├── 📄 AuthenticationService.java
-│   │   │   │           │   ├── 📄 EventService.java
-│   │   │   │           │   ├── 📄 FeedbackService.java
-│   │   │   │           │   ├── 📄 FoodService.java
-│   │   │   │           │   ├── 📄 PaymentService.java
-│   │   │   │           │   ├── 📄 ThemeService.java
-│   │   │   │           │   └── 📄 UserService.java
-│   │   │   │           └── 📂 util
-│   │   │   │               ├── 📄 JwtUtils.java
-│   │   │   │               └── 📄 LogoutUtils.java
-│   │   │   └── 📂 resources
-│   │   │       └── 📄 application.properties
-│   │   └── 📂 test
-│   ├── 📄 pom.xml
-│   ├── 📄 mvnw
-│   ├── 📄 mvnw.cmd
-│   └── 📄 .gitignore
-│
-└── 📄 README.md
+Directory structure:
+└── hariharans24-birthday-event-planner-react-vite-springboot/
+    ├── README.md
+    ├── gitattributes
+    ├── LICENSE.txt
+    ├── Backend/
+    │   ├── mvnw
+    │   ├── mvnw.cmd
+    │   ├── pom.xml
+    │   ├── .gitignore
+    │   ├── src/
+    │   │   ├── main/
+    │   │   │   ├── java/
+    │   │   │   │   └── com/
+    │   │   │   │       └── java/
+    │   │   │   │           └── birthday/
+    │   │   │   │               ├── BirthdayApplication.java
+    │   │   │   │               ├── config/
+    │   │   │   │               │   ├── ApplicationConfig.java
+    │   │   │   │               │   ├── JwtAuthenticationFilter.java
+    │   │   │   │               │   ├── SecurityConfig.java
+    │   │   │   │               │   └── SwaggerConfig.java
+    │   │   │   │               ├── controller/
+    │   │   │   │               │   ├── AddonController.java
+    │   │   │   │               │   ├── AuthenticationController.java
+    │   │   │   │               │   ├── EventController.java
+    │   │   │   │               │   ├── FeedbackController.java
+    │   │   │   │               │   ├── FoodController.java
+    │   │   │   │               │   ├── PaymentController.java
+    │   │   │   │               │   ├── ThemeController.java
+    │   │   │   │               │   └── UserController.java
+    │   │   │   │               ├── dto/
+    │   │   │   │               │   ├── request/
+    │   │   │   │               │   │   ├── ForgotPasswordRequest.java
+    │   │   │   │               │   │   ├── LoginRequest.java
+    │   │   │   │               │   │   └── RegisterRequest.java
+    │   │   │   │               │   └── response/
+    │   │   │   │               │       ├── BasicResponse.java
+    │   │   │   │               │       └── LoginResponse.java
+    │   │   │   │               ├── Enum/
+    │   │   │   │               │   ├── Permission.java
+    │   │   │   │               │   ├── Role.java
+    │   │   │   │               │   └── TokenType.java
+    │   │   │   │               ├── model/
+    │   │   │   │               │   ├── Addon.java
+    │   │   │   │               │   ├── Event.java
+    │   │   │   │               │   ├── Feedback.java
+    │   │   │   │               │   ├── Food.java
+    │   │   │   │               │   ├── Payment.java
+    │   │   │   │               │   ├── Theme.java
+    │   │   │   │               │   ├── Token.java
+    │   │   │   │               │   └── User.java
+    │   │   │   │               ├── repository/
+    │   │   │   │               │   ├── AddonRepository.java
+    │   │   │   │               │   ├── EventRepository.java
+    │   │   │   │               │   ├── FeedbackRepository.java
+    │   │   │   │               │   ├── FoodRepository.java
+    │   │   │   │               │   ├── PaymentRepository.java
+    │   │   │   │               │   ├── ThemeRepository.java
+    │   │   │   │               │   ├── TokenRepository.java
+    │   │   │   │               │   └── UserRepository.java
+    │   │   │   │               ├── service/
+    │   │   │   │               │   ├── AddonService.java
+    │   │   │   │               │   ├── AuthenticationService.java
+    │   │   │   │               │   ├── EventService.java
+    │   │   │   │               │   ├── FeedbackService.java
+    │   │   │   │               │   ├── FoodService.java
+    │   │   │   │               │   ├── PaymentService.java
+    │   │   │   │               │   ├── ThemeService.java
+    │   │   │   │               │   ├── UserService.java
+    │   │   │   │               │   └── impl/
+    │   │   │   │               │       └── AuthenticationServiceImpl.java
+    │   │   │   │               └── utils/
+    │   │   │   │                   ├── JwtUtils.java
+    │   │   │   │                   └── LogoutUtils.java
+    │   │   │   └── resources/
+    │   │   │       ├── application.properties
+    │   │   │       └── META-INF/
+    │   │   │           └── additional-spring-configuration-metadata.json
+    │   │   └── test/
+    │   │       └── java/
+    │   │           └── com/
+    │   │               └── java/
+    │   │                   └── birthday/
+    │   │                       ├── BirthdayApplicationTests.java
+    │   │                       └── model/
+    │   │                           └── user.java
+    │   └── .mvn/
+    │       └── wrapper/
+    │           └── maven-wrapper.properties
+    └── Frontend/
+        ├── index.html
+        ├── package-lock.json
+        ├── package.json
+        ├── vite.config.js
+        └── src/
+            ├── App.css
+            ├── App.jsx
+            ├── index.css
+            ├── main.jsx
+            └── assets/
+                ├── Admin/
+                │   ├── AdminHome.jsx
+                │   ├── AdminLogin.jsx
+                │   ├── AdminUserDetails.jsx
+                │   ├── EventList.jsx
+                │   ├── EventView.jsx
+                │   └── Feedback.jsx
+                ├── Auth/
+                │   ├── Forgot.jsx
+                │   ├── Signin.jsx
+                │   └── Signup.jsx
+                ├── Components/
+                │   ├── ErrorBoundary.jsx
+                │   └── LazySuspense.jsx
+                ├── Css/
+                │   ├── AboutUs.css
+                │   ├── AdminHome.css
+                │   ├── AdminLogin.css
+                │   ├── ContactUs.css
+                │   ├── EventDisplay.css
+                │   ├── EventList.css
+                │   ├── EventRegistrationForm.css
+                │   ├── EventViewForm.css
+                │   ├── Faq.css
+                │   ├── FoodItems.css
+                │   ├── Footer.css
+                │   ├── Forgot.css
+                │   ├── Home.css
+                │   ├── Navbar.css
+                │   ├── ProfileDashboard.css
+                │   ├── Services.css
+                │   ├── Signin.css
+                │   ├── Signup.css
+                │   ├── Stats.css
+                │   ├── StoryPage.css
+                │   ├── Video.css
+                │   ├── WhatWeDo.css
+                │   └── WhyUs.css
+                ├── Images/
+                ├── Pages/
+                │   ├── AboutUs.jsx
+                │   ├── Contactus.jsx
+                │   ├── EventDisplay.jsx
+                │   ├── EventList.jsx
+                │   ├── EventRegistrationForm.jsx
+                │   ├── EventViewForm.jsx
+                │   ├── F.jsx
+                │   ├── Faq.jsx
+                │   ├── FoodItems.jsx
+                │   ├── Footer.jsx
+                │   ├── Gallery.jsx
+                │   ├── Home.jsx
+                │   ├── Navbar.jsx
+                │   ├── Privacy.jsx
+                │   ├── ProfileDashboard.jsx
+                │   ├── RazorPay.jsx
+                │   ├── Services.jsx
+                │   ├── Terms.jsx
+                │   ├── WhatWeDo.jsx
+                │   └── WhyUs.jsx
+                ├── redux/
+                │   ├── store.jsx
+                │   └── UserSlice.jsx
+                └── User/
+                    └── UserProfile.jsx
 ```
 
 ## 🚀 Getting Started
